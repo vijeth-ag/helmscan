@@ -1,0 +1,10 @@
+name: "scan"
+version: 1.0.0-beta.1
+usage: "Helm plugin to scan charts against policies"
+description: "Helm plugin to scan charts for standards "
+command: "$HELM_PLUGIN_DIR/bin/helm-scan"
+hooks:
+  install: "cd $HELM_PLUGIN_DIR; scripts/install_plugin.sh"
+  update: "cd $HELM_PLUGIN_DIR; scripts/install_plugin.sh"
+ignoreFlags: false
+useTunnel: false

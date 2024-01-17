@@ -1,0 +1,3 @@
+policies:
+  shouldNotContainSecret: true
+  shouldNotContainPassword: true
